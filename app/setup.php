@@ -23,6 +23,8 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
 
+    wp_localize_script( 'sage/app.js', 'ajax_url', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+
     wp_enqueue_style('sage/app.css', asset('styles/app.css')->uri(), false, null);
 }, 100);
 
@@ -68,7 +70,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_navigation' => __('Footer Navigation', 'sage')
     ]);
 
     /**
@@ -138,50 +141,33 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-// //Add custom post types
-// add_action( 'init', function() {
-// 	register_extended_post_type( 'course', [
-//         'admin_cols' => array(
-//             // The default Title column:
-//             'title',
-//             // A taxonomy terms column:
-//             'genre' => array(
-//                 'taxonomy' => 'category'
-//             ),
-//             // A meta field column:
-//             'date' => array(
-//                 'title'       => 'Date',
-//                 'meta_key'    => 'date',
-//                 'date_format' => 'd/m/Y'
-//             ),
-//         ),
-//         'menu_icon' => 'dashicons-book',
-//         'show_in_rest' => true,
-//     ],
-//     [
-//         'singular' => 'Course',
-//         'plural'   => 'Courses',
-//         'slug'     => 'course',   
-//     ]
-//     );
-//     register_extended_taxonomy( 'category', 'course', array(
-//         'meta_box' => 'radio',
-//     ), array(
-    
-//         # Override the base names used for labels:
-//         'singular' => 'Category',
-//         'plural'   => 'Categories',
-//         'slug'     => 'category'
-    
-//     ) );
-//     register_extended_taxonomy( 'tag', 'course', array(
-//         'meta_box' => 'simple',
-//     ), array(
-    
-//         # Override the base names used for labels:
-//         'singular' => 'Tag',
-//         'plural'   => 'Tags',
-//         'slug'     => 'tag'
-    
-//     ) );
-// } );
+//Add custom post types
+add_action( 'init', function() {
+
+	register_extended_post_type( 'function', [
+        'admin_cols' => array(
+            // The default Title column:
+            'title',
+            // A taxonomy terms column:
+            // 'genre' => array(
+            //     'taxonomy' => 'category'
+            // ),
+            // A meta field column:
+            'date' => array(
+                'title'       => 'Date',
+                'meta_key'    => 'date',
+                'date_format' => 'd/m/Y'
+            ),
+        ),
+        'menu_icon' => 'dashicons-feedback',
+        'show_in_rest' => true,
+        'supports' => ['excerpt', 'editor', 'thumbnail', 'title'],
+        'template' => $template,
+    ],
+    [
+        'singular' => 'Function',
+        'plural'   => 'Functions',
+        'slug'     => 'function',   
+    ]
+    );
+} );

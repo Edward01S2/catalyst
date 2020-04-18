@@ -2,6 +2,8 @@
  * Global
  */
 
+ /* purgecss start ignore */
+
 // a {
 //   color: map-get($theme-colors, 'primary');
 // }
@@ -20,3 +22,26 @@
 //     background-color: $color-value;
 //   }
 // }
+
+* { 
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+html {
+  @apply font-heebo font-light bg-c-gray-300;
+  padding: env(safe-area-inset);
+}
+
+h1, h2, h3, h4 {
+  @apply font-slab;
+}
+
+p {
+  @apply mb-4 leading-relaxed;
+}
+
+
+
+/* purgecss end ignore */

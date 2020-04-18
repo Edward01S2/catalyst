@@ -41,9 +41,8 @@
   "require": {
     "php": "^7.2.5",
     "johnbillion/extended-cpts": "^4.3",
-    "log1x/acf-composer": "^1.2",
-    "roots/acorn": "^1.0.1",
-    "roots/soil": "^3.9",
+    "log1x/acf-composer": "^1.2.8",
+    "roots/acorn": "dev-master",
     "stoutlogic/acf-builder": "^1.9"
   },
   "require-dev": {

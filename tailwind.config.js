@@ -15,20 +15,19 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      'p-teal': '#31bcb1',
-      'p-teal-200': '#eff8f7',
-      'p-gray': {
-        100: '#6f6f6f',
-        200: '#868686',
-        300: '#353535',
+      'c-blue': {
+        50: '#ddf1fb',
+        100: '#60c7cc',
+        200: '#218dcc',
+        300: '#0c0e21',
+        400: '#1b6ba7',
       },
-      'p-black': '#111111',
-      'p-orange': '#e79948',
-      'p-orange-200': '#d4791b',
-      'p-blue': {
-        100: '#EBF4FF',
-        200: '#00abc6',
-        300: '#119c9e'
+
+      'c-gray': {
+        100: '#8e8d8d',
+        200: '#302f30',
+        300: '#231f20',
+        400: '#191617',
       },
 
       gray: {
@@ -157,10 +156,12 @@ module.exports = {
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
+      '28': '7rem',
       '32': '8rem',
       '36': '9rem',
       '40': '10rem',
       '48': '12rem',
+      '52': '13rem',
       '56': '14rem',
       '60': '15rem',
       '64': '16rem',
@@ -170,7 +171,11 @@ module.exports = {
       '88': '22rem',
       '96': '24rem',
       '108': '27rem',
+      '116': '31rem',
+      '118': '32rem',
+      '120': '36rem',
       '124': '38rem',
+      '50vw': '50vw',
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -188,6 +193,7 @@ module.exports = {
       auto: 'auto',
       cover: 'cover',
       contain: 'contain',
+      '50%' : '50%',
     },
     borderColor: theme => ({
       ...theme('colors'),
@@ -250,8 +256,11 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      mont: [
-        'Montserrat'
+      heebo: [
+        'Heebo'
+      ],
+      slab: [
+        'Roboto Slab'
       ],
       sans: [
         'system-ui',
@@ -441,6 +450,8 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.333333%',
       '11/12': '91.666667%',
+      '512': '512px',
+      '640' : '640px',
       full: '100%',
       screen: '100vw',
     }),
@@ -533,6 +544,7 @@ module.exports = {
       'span-4': 'span 4 / span 4',
       'span-5': 'span 5 / span 5',
       'span-6': 'span 6 / span 6',
+      'span-8': 'span 8 / span 8',
     },
     gridRowStart: {
       auto: 'auto',
@@ -644,7 +656,7 @@ module.exports = {
     borderColor: ['responsive', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
-    borderWidth: ['responsive'],
+    borderWidth: ['responsive', 'hover'],
     boxShadow: ['responsive', 'hover', 'focus'],
     boxSizing: ['responsive'],
     cursor: ['responsive'],
@@ -661,7 +673,7 @@ module.exports = {
     fontSize: ['responsive'],
     fontSmoothing: ['responsive'],
     fontStyle: ['responsive'],
-    fontWeight: ['responsive', 'hover', 'focus'],
+    fontWeight: ['responsive', 'hover', 'focus', 'group-hover'],
     height: ['responsive'],
     inset: ['responsive'],
     justifyContent: ['responsive'],
