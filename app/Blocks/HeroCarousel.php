@@ -44,7 +44,7 @@ class herocarousel extends Block
     public function with()
     {
         return [
-            'slides' => $this->slides(),
+            'slides' => get_field('slides'),
         ];
     }
 
@@ -72,13 +72,4 @@ class herocarousel extends Block
         return $herocarousel->build();
     }
 
-    /**
-     * Return the items field.
-     *
-     * @return array
-     */
-    public function slides()
-    {
-        return get_field('slides') ?: [];
-    }
 }
