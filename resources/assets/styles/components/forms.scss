@@ -126,7 +126,7 @@
     @apply mb-8;
   }
   .gform_button {
-    @apply text-white bg-c-blue-200 rounded-sm border-2 border-transparent transition duration-300;
+    @apply text-white bg-c-blue-200 rounded-sm border-2 border-transparent transition duration-300 box-content;
     &:hover {
       @apply bg-white border-2 border-c-blue-200 text-c-blue-200;
     }
@@ -137,7 +137,7 @@
   #gform_1 {
     @apply flex items-end;
     .gform_body {
-      @apply w-3/4;
+      @apply w-4/5;
     }
     .gform_fields {
       @apply flex items-end mb-0;
@@ -146,7 +146,7 @@
       @apply mb-0 mr-8 w-1/2;
     }
     .gform_footer {
-      @apply w-1/4;
+      @apply w-1/5;
     }
     .gfield_label {
       @apply mb-1 block;
