@@ -17,6 +17,8 @@ $(document).ready(() => {
 
   $(document).bind('gform_post_render', function() {
     $('input[type=checkbox]').addClass('form-checkbox');
+    $('#gform_2 .gform_footer').appendTo('#gform_2 .gform_fields');
+    $('#gform_3 .gform_footer').appendTo('#gform_3 .gform_fields');
   })
 
   $('.hero_carousel').flickity({
