@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html {!! get_language_attributes() !!}>
 
   <body @php(body_class())>
@@ -26,11 +26,11 @@
     @php(wp_footer())
     {!! $foot_scripts !!}
   </body>
-</html>
+</html> --}}
 
 
 
-{{-- @include('partials.header')
+@include('partials.header')
 
 <div class="">
   <main class="main">
@@ -44,5 +44,5 @@
   @endif
 </div>
 
-@include('partials.footer') --}}
+@include('partials.footer')
 
