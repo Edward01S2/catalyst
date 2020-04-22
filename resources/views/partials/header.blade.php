@@ -10,7 +10,7 @@
             </a>
           </div>
         </div>
-        <div class="hidden sm:ml-6 sm:block">
+        <div class="hidden sm:ml-6 sm:block md:mt-8">
           <div class="flex items-center">
             <div class="hidden sm:block sm:ml-6">
               <div class="flex">

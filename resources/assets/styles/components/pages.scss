@@ -92,4 +92,13 @@
   background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
 }
 
+.carousel-image {
+  mask-image: linear-gradient(190deg, rgba(0,0,0,0) 13%, rgba(0,0,0,1) 50%)
+  // &:before {
+  //   @apply top-0 left-0 right-0 bottom-0;
+  //   content: ' ';
+  //   background-image: linear-gradient(to left, currentColor 5%, transparent 30%);
+  // }
+}
+
 /* purgecss end ignore */
