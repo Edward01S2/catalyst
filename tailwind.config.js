@@ -257,10 +257,14 @@ module.exports = {
     },
     fontFamily: {
       heebo: [
-        'Heebo'
+        'Heebo',
+        'heebo',
+        'sans-serif'
       ],
       slab: [
-        'Roboto Slab'
+        'Roboto Slab',
+        'roboto-slab',
+        'serif',
       ],
       sans: [
         'system-ui',
