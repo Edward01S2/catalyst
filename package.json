@@ -51,7 +51,7 @@
     "alpinejs": "^2.2.5",
     "bootstrap": "^4.4.1",
     "flickity": "^2.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-bridget": "^2.0.1",
     "popper.js": "^1.16.1"
   }
