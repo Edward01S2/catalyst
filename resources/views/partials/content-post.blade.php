@@ -1,6 +1,6 @@
 <div class="rp-item flex flex-col border border-gray-200 mb-8 md:flex-row lg:mb-0 lg:border-0">
   <div class="rp-content bg-white p-4 order-2 md:p-6 md:w-1/2 md:overflow-hidden">
-    <div class="overflow-y-scroll md:h-52 xl:h-24">
+    <div class="overflow-y-auto md:h-52 xl:h-24">
       <div class="rp-cat text-c-blue-200 text-sm md:text-base lg:mb-2 xl:mb-1 xl:text-sm">
         @if($post['date'])
         <div>{!! $post['date'] !!}</div>

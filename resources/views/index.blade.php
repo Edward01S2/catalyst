@@ -29,7 +29,7 @@
       @foreach($posts['posts'] as $post)
         @if($loop->index == 0)
           <div class="rp-main relative flex flex-col border border-gray-200 mb-8 lg:mb-0 xl:col-span-2 xl:flex-row xl:border-0">
-            <div class="rp-content p-4 order-2 md:p-6 md:overflow-y-scroll xl:w-1/2 xl:pt-0">
+            <div class="rp-content p-4 order-2 md:p-6 md:overflow-y-auto xl:w-1/2 xl:pt-0">
               <div class="text-c-blue-200 text-sm md:text-base lg:mb-2 xl:mb-1">
                 <span>\</span>
                 <a class="hover:underline" href="{!! $cat['link'] !!}">{!! $post['cat'][0]->name !!}</a>

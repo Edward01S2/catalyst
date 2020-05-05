@@ -1,6 +1,6 @@
 <div class="hero_carousel">
   @foreach ($slides as $slide)
-    <div class="w-full min-h-full flex md:h-auto" style="{!! $slide['gradient'] !!}">
+    <div id="slide-bg" class="w-full min-h-full flex md:h-auto" style="{!! $slide['gradient'] !!}">
       <div class="flex flex-col md:flex-row container mx-auto xl:relative">
         <div class="text-white order-2 pb-12 relative z-20 md:w-1/2 md:order-1 xl:pb-16">
           <div class="container mx-auto px-4 pt-36 sm:px-6 md:pt-36 lg:px-8 lg:pt-40 xl:w-640 xl:ml-auto xl:mr-0">

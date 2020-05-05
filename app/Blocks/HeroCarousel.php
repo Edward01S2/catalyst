@@ -67,6 +67,7 @@ class herocarousel extends Block
                 ->addLink('link')
                 ->addTextarea('gradient')
                 ->addImage('bg image')
+                ->addFile('video')
             ->endRepeater();
 
         return $herocarousel->build();

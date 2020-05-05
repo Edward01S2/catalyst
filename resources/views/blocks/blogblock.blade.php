@@ -10,7 +10,7 @@
       @foreach($posts['posts'] as $post)
         @if($loop->index == 0)
           <div class="rp-main relative flex flex-col border border-gray-200 mb-8 lg:mb-0 xl:col-span-4 xl:row-span-8 xl:flex-none xl:border-0 xl:h-120">
-            <div class="rp-content p-4 relative order-2 md:p-6 md:overflow-y-scroll xl:pt-0 xl:order-1 xl:absolute xl:top-0 xl:pb-4 xl:z-30 xl:overflow-visble">
+            <div class="rp-content p-4 relative order-2 md:p-6 md:overflow-y-auto xl:pt-0 xl:order-1 xl:absolute xl:top-0 xl:pb-4 xl:z-30 xl:overflow-visble">
               <div class="text-c-blue-200 text-sm md:text-base lg:mb-2 xl:mb-1 xl:text-sm">
                 <span>\</span>
                 <a class="hover:underline" href="/category/{!! $post['cat'][0]->slug !!}">{!! $post['cat'][0]->name !!}</a>
