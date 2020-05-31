@@ -61,9 +61,9 @@ class functions extends Block
         $functions
             ->addText('Title')
             ->addRelationship('functions', [
-                'label' => 'Functions',
+                'label' => 'Services',
                 'max' => 4,
-                'post_type' => ['function'],
+                'post_type' => ['service'],
             ]);
 
         return $functions->build();

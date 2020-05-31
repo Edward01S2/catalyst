@@ -6,7 +6,7 @@
           <div class="flex-shrink-0">
             {{-- @dump($logo) --}}
             <a href="{{ home_url('/') }}">
-              <img class="block h-20 w-auto mt-8 transform transition duration-300 hover:scale-105" src="{!! $logo['url'] !!}" alt="{{ $siteName }}" />
+              <img class="block h-20 w-auto mt-8 transform transition duration-200 hover:opacity-75" src="{!! $logo['url'] !!}" alt="{{ $siteName }}" />
             </a>
           </div>
         </div>

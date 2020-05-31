@@ -4,7 +4,7 @@ namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
 
-class SingleFunction extends Composer
+class SingleService extends Composer
 {
     /**
      * List of views served by this composer.
@@ -12,7 +12,7 @@ class SingleFunction extends Composer
      * @var array
      */
     protected static $views = [
-        'partials.content-single-function',
+        'partials.content-single-service',
     ];
 
     /**
@@ -57,7 +57,6 @@ class SingleFunction extends Composer
       $args = array(
           'post_type' => 'post',
           'post_status' => 'publish',
-          'category_name' => $cat,
           //Here we can get more than one post type. Useful to a home page.
       );
 

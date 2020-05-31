@@ -154,17 +154,17 @@
   }
 }
 
-@screen lg {
-  #gform_1 {
-    @apply max-w-3xl mx-auto;
-  }
-}
+// @screen lg {
+//   #gform_1 {
+//     @apply max-w-3xl mx-auto;
+//   }
+// }
 
-@screen xl {
-  #gform_1 {
-    @apply max-w-4xl;
-  }
-}
+// @screen xl {
+//   #gform_1 {
+//     @apply max-w-4xl;
+
+// }
 
 #gform_2 {
   @apply text-white;

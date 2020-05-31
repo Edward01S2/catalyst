@@ -4,6 +4,7 @@
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-0">
       {{-- @dump($functions) --}}
       {{-- @dump($info) --}}
+      @if($info)
       @foreach($info as $func)
         <div class="border border-gray-200 md:border-none" style="background-color: {!! $func['bg'] !!}">
           <div class="p-4 md:p-6 lg:p-8 lg:pb-2" style="color: {!! $func['text'] !!}">
@@ -21,6 +22,6 @@
           </div>
         </div>
       @endforeach
-    </div>
+      @endif
   </div>
 </div>

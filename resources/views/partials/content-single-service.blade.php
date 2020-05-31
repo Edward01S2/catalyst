@@ -2,6 +2,7 @@
   {!! the_content() !!}
 </div>
 <div>
+
 @if($post_data)
   @include('blocks.blogblock', ['posts' => $post_data, 'title' => $title, 'blog_title' => $blog_title, 'link' => $link, 'cat' => $cat ])
 @endif

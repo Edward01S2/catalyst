@@ -145,7 +145,7 @@ add_action('widgets_init', function () {
 //Add custom post types
 add_action( 'init', function() {
 
-	register_extended_post_type( 'function', [
+	register_extended_post_type( 'service', [
         'admin_cols' => array(
             // The default Title column:
             'title',
@@ -166,9 +166,9 @@ add_action( 'init', function() {
         'template' => $template,
     ],
     [
-        'singular' => 'Function',
-        'plural'   => 'Functions',
-        'slug'     => 'function',   
+        'singular' => 'Service',
+        'plural'   => 'Services',
+        'slug'     => 'service',   
     ]
     );
 } );

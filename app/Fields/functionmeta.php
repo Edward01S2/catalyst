@@ -20,7 +20,7 @@ class functionmeta extends Field
         ]);
 
         $functionmeta
-            ->setLocation('post_type', '==', 'function');
+            ->setLocation('post_type', '==', 'service');
 
         $functionmeta
             ->addColorPicker('bg color')

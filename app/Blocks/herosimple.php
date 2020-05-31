@@ -36,7 +36,7 @@ class herosimple extends Block
      */
     public $icon = 'screenoptions';
 
-    public $post_types = ['post', 'page', 'function'];
+    public $post_types = ['post', 'page', 'service'];
 
     /**
      * Data to be passed to the block before rendering.

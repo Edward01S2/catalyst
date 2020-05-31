@@ -16,6 +16,9 @@
         </div>
         <div class="order-1 ml-auto absolute opacity-25 z-10 top-0 right-0 left-0 md:order-2 md:mt-0 md:pb-16 md:opacity-100 md:w-1/2 xl:relative xl:h-120 xl:pb-0">
           <img class="carousel-image relative w-auto h-56 ml-auto md:h-auto object-contain lg:ml-auto lg:h-116 xl:h-full xl:w-full xl:object-cover xl:object-center" src="{!! $slide['bg image']['url'] !!}" alt="">
+          {{-- <video autoplay controls> 
+            <source src="{!! $slide['video']['url'] !!}">
+          </video> --}}
         </div>
       </div>
     </div>
