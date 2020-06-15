@@ -21,19 +21,19 @@ $(document).ready(() => {
     $('#gform_3 .gform_footer').appendTo('#gform_3 .gform_fields');
   })
 
-  $('.hero_carousel').flickity({
-    // options
-    contain: true,
-    wrapAround: true,
-    prevNextButtons: false,
-  });
+  // $('.hero_carousel').flickity({
+  //   // options
+  //   contain: true,
+  //   wrapAround: true,
+  //   prevNextButtons: false,
+  // });
 
-  $(window).smartresize(function() {
-    // console.log('window resized');
-    $('.flickity-viewport').height('');
-    $('.hero_carousel').flickity('resize');
+  // $(window).smartresize(function() {
+  //   // console.log('window resized');
+  //   $('.flickity-viewport').height('');
+  //   $('.hero_carousel').flickity('resize');
 
-  });
+  // });
 
   $('#gform_2 .gform_footer').appendTo('#gform_2 .gform_fields');
 
