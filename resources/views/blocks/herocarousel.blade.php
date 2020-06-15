@@ -2,9 +2,10 @@
   @foreach ($slides as $slide)
     <div id="slide-bg" class="relative w-full flex h-full md:h-112 lg:h-116" style="{!! $slide['gradient'] !!}">
       <div>
-        <video class="object-cover w-full h-full object-center absolute z-10 opacity-50 md:opacity-100" autoplay loop muted>
-          <source src="{!! $slide['video']['url'] !!}" type="video/mp4">
+        <video class="carousel-image object-cover w-full h-full object-center absolute z-10 opacity-50 md:opacity-100" autoplay loop muted poster="{!! $slide['video poster']['url'] !!}">
+          <source id="bg-vid" src="{!! $slide['video']['url'] !!}" type="video/mp4">
         </video>
+        {{-- <div id="video-src" class="hidden" data-desktop="{!! $slide['video desktop']['url'] !!}" data-mobile="{!! $slide['video']['url'] !!}"></div> --}}
       </div>
       <div class="flex flex-col md:flex-row container mx-auto relative">
         <div class="text-white order-2 pb-12 relative z-20 md:w-1/2 md:order-1 md:pb-20">

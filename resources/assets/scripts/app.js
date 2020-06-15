@@ -28,10 +28,11 @@ $(document).ready(() => {
   //   prevNextButtons: false,
   // });
 
+  // videoSource();
+
   // $(window).smartresize(function() {
   //   // console.log('window resized');
-  //   $('.flickity-viewport').height('');
-  //   $('.hero_carousel').flickity('resize');
+  //   videoSource();
 
   // });
 
@@ -81,6 +82,18 @@ $(document).ready(() => {
   
 
 });
+
+function videoSource() {
+  var video = $('#bg-vid');
+  if($(window).width() < 1280) {
+    var vid = $('#video-src').data('mobile');
+    video.attr('src', vid);
+  }
+  else {
+    var vid = $('#video-src').data('desktop');
+    video.attr('src', vid);
+  }
+};
 
 (function($,sr){
 
