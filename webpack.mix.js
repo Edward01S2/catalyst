@@ -28,6 +28,9 @@ mix.sass('resources/assets/styles/app.scss', 'styles')
    .purgeCss({
      whitelist: require('purgecss-with-wordpress').whitelist,
      whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
+     whitelistPatternsChildren: [
+        /^prose/,
+     ]
    });
 
 mix.js('resources/assets/scripts/app.js', 'scripts')

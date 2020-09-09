@@ -23,6 +23,7 @@
     "translate:js": "wp i18n make-json ./resources/languages --no-purge --pretty-print"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "@tailwindcss/ui": "^0.1.4",
     "@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
     "@wordpress/babel-preset-default": "^4.14.0",

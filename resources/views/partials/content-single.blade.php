@@ -32,7 +32,7 @@
 
       <div class="container mx-auto px-4 sm:px-6 lg:px-0 lg:max-w-3xl lg:mx-auto xl:max-w-4xl">
         <div class="entry-content pb-8">
-          <div class="">
+          <div class="prose">
             @php(the_content())
           </div>
         </div>

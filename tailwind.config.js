@@ -644,6 +644,18 @@ module.exports = {
       '700': '700ms',
       '1000': '1000ms',
     },
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.gray.900'),
+          'ul > li:before': {
+            backgroundColor: theme('colors.gray.900'), 
+          }
+
+          // ...
+        },
+      },
+    }),
   },
   variants: {
     accessibility: ['responsive', 'focus'],
@@ -738,5 +750,6 @@ module.exports = {
   corePlugins: {},
   plugins: [
     require('@tailwindcss/ui'),
+    require('@tailwindcss/typography'),
   ],
 }
