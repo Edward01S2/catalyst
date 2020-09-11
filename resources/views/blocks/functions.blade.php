@@ -9,7 +9,8 @@
         <div class="border border-gray-200 md:border-none" style="background-color: {!! $func['bg'] !!}">
           <div class="p-4 md:p-6 lg:p-8 lg:pb-2" style="color: {!! $func['text'] !!}">
             <h3 class="text-xl mb-2 lg:text-2xl">
-              <a class="inline-block transition transform duration-300 hover:-translate-y-px" href="{!! $func['link'] !!}">{!! $func['title'] !!}</a>
+              {{-- <a class="inline-block transition transform duration-300 hover:-translate-y-px" href="{!! $func['link'] !!}">{!! $func['title'] !!}</a> --}}
+              {!! $func['title'] !!}
             </h3>
             <p class="lg:text-lg">{!! $func['excerpt'] !!}</p>
             {{-- <a class="block flex items-center group transform transition duration-300 hover:translate-x-2" href="{!! $func['link'] !!}">

@@ -60,5 +60,5 @@
 
 {{-- @dump($posts) --}}
 
-@include('blocks.contact', ['form' => 2, 'title' => get_field('Contact Title', 'options'), 'subtitle' => get_field('Contact Subtitle', 'options')])
+// @include('blocks.contact', ['form' => 2, 'title' => get_field('Contact Title', 'options'), 'subtitle' => get_field('Contact Subtitle', 'options')])
 @include('blocks.signup', ['form' => 1, 'title' => get_field('Signup Title', 'options')])
