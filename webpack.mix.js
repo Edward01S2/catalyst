@@ -24,14 +24,14 @@ mix.sass('resources/assets/styles/app.scss', 'styles')
    .options({
       processCssUrls: false,
       postCss: [ tailwindcss('tailwind.config.js')]
-   })
-   .purgeCss({
-     whitelist: require('purgecss-with-wordpress').whitelist,
-     whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
-     whitelistPatternsChildren: [
-        /^prose/,
-     ]
    });
+   // .purgeCss({
+   //   whitelist: require('purgecss-with-wordpress').whitelist,
+   //   whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
+   //   whitelistPatternsChildren: [
+   //      /^prose/,
+   //   ]
+   //});
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
    .js('resources/assets/scripts/customizer.js', 'scripts')

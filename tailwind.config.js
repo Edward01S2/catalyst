@@ -2,6 +2,17 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
+  purge: {
+    content: [
+    './resources/**/**/*.php',
+    './resources/**/*.php',
+    './resources/**/**/*.js',
+    './resources/**/*.js',
+    ],
+    options: {
+      whitelist: ['italic', 'text-c-blue-300', 'md:hidden'],
+    }
+  },
   theme: {
     screens: {
       sm: '640px',
