@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<article @php(post_class())>
+<article @php post_class() @endphp>
   <div class="bg-white">
     <div class=>
       <header class="relative">
@@ -33,7 +33,7 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-0 lg:max-w-3xl lg:mx-auto xl:max-w-4xl">
         <div class="entry-content pb-8">
           <div class="prose">
-            @php(the_content())
+            @php the_content()@endphp
           </div>
         </div>
       </div>
@@ -60,5 +60,5 @@
 
 {{-- @dump($posts) --}}
 
-// @include('blocks.contact', ['form' => 2, 'title' => get_field('Contact Title', 'options'), 'subtitle' => get_field('Contact Subtitle', 'options')])
+{{-- @include('blocks.contact', ['form' => 2, 'title' => get_field('Contact Title', 'options'), 'subtitle' => get_field('Contact Subtitle', 'options')]) --}}
 @include('blocks.signup', ['form' => 1, 'title' => get_field('Signup Title', 'options')])
