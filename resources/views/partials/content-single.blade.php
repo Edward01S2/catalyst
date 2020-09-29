@@ -32,7 +32,7 @@
 
       <div class="container mx-auto px-4 sm:px-6 lg:px-0 lg:max-w-3xl lg:mx-auto xl:max-w-4xl">
         <div class="entry-content pb-8">
-          <div class="prose">
+          <div class="prose  max-w-none xl:prose-lg">
             @php the_content()@endphp
           </div>
         </div>
@@ -42,6 +42,17 @@
 </article>
 
 <div class="bg-white">
+  <div class="container mx-auto">
+    <div class="text-center">
+      <a class="uppercase px-4 py-2 border-2 border-c-blue-200 inline-flex items-center font-medium group hover:bg-c-blue-200 hover:text-white" href="{!! $blog !!}">
+        <span class="mr-2 tracking-wider">Back to Blog</span>
+        <svg class="w-6 h-6 text-c-blue-200 inline group-hover:text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+      </a>
+  </div>
+</div>
+</div>
+
+{{-- <div class="bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-center text-c-blue-200 uppercase text-2xl mb-8 font-heebo font-medium tracking-wider">Related Posts</h2>
     <div class="rp-container flex flex-col lg:grid lg:grid-cols-1 lg:flex-none xl:grid-cols-2">
@@ -56,7 +67,7 @@
       </a>
     </div>
   </div>
-</div>
+</div> --}}
 
 {{-- @dump($posts) --}}
 
