@@ -1,6 +1,6 @@
 <div class="hero_carousel">
   @foreach ($slides as $slide)
-    <div id="slide-bg" class="relative w-full flex h-full md:h-112 lg:h-116" style="{!! $slide['gradient'] !!}">
+    <div id="slide-bg" class="relative w-full flex h-full" style="{!! $slide['gradient'] !!}">
       <div>
         <video class="carousel-image object-cover w-full h-full object-center absolute z-10 opacity-50 md:opacity-100" autoplay loop muted poster="{!! $slide['video poster']['url'] !!}">
           <source id="bg-vid" src="{!! $slide['video']['url'] !!}" type="video/mp4">
@@ -8,15 +8,17 @@
         {{-- <div id="video-src" class="hidden" data-desktop="{!! $slide['video desktop']['url'] !!}" data-mobile="{!! $slide['video']['url'] !!}"></div> --}}
       </div>
       <div class="flex flex-col md:flex-row container mx-auto relative">
-        <div class="text-white order-2 pb-12 relative z-20 md:w-1/2 md:order-1 md:pb-20">
-          <div class="container mx-auto px-4 pt-36 sm:px-6 md:pt-36 lg:px-8 lg:pt-40 xl:w-640 xl:ml-auto xl:mr-0">
-            <h1 class="text-3xl leading-tight mb-4 max-w-xs lg:text-4xl lg:max-w-md xl:text-5xl xl:max-w-lg">{!! $slide['title'] !!}</h1>
-            <p class="mb-4 max-w-md lg:pr-8 xl:text-xl xl:max-w-lg">{!! $slide['content'] !!}</p>
-            <div class="flex">
-              <a class="inline-block mr-2 font-bold tracking-wider xl:text-xl hover:translate-x-2 transform transition duration-300" href="{!! $slide['link']['url'] !!}">
-                {!! $slide['link']['title'] !!}
-                <svg class="w-6 h-6 inline-block xl:h-8 xl:w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              </a> 
+        <div class="text-white order-2 pb-12 relative z-20 md:w-1/2 md:order-1 md:pb-20 xl:pb-32">
+          <div class="container mx-auto px-4 pt-36 sm:px-6 md:pt-36 lg:px-8 lg:pt-40 xl:mr-0 xl:pt-48">
+            <div class="">
+              <h1 class="text-3xl leading-tight mb-4 max-w-xs lg:text-4xl lg:max-w-md xl:text-5xl xl:max-w-lg">{!! $slide['title'] !!}</h1>
+              <p class="mb-4 max-w-md prose-lg lg:pr-8  xl:max-w-lg xl:prose-xl">{!! $slide['content'] !!}</p>
+              <div class="flex">
+                <a class="inline-block mr-2 font-bold tracking-wider xl:text-xl hover:translate-x-2 transform transition duration-300" href="{!! $slide['link']['url'] !!}">
+                  {!! $slide['link']['title'] !!}
+                  <svg class="w-6 h-6 inline-block xl:h-8 xl:w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a> 
+              </div>
             </div>
           </div>
         </div>

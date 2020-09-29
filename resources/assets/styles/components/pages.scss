@@ -39,53 +39,67 @@
 }
 
 //Page Blog
-@screen md {
-  .blog, .archive {
-    .rp-item {
-      &:nth-child(even) {
-        .rp-content {
-          @apply order-1;
-        }
-        .rp-image {
-          @apply order-2;
-        }
+
+.blog, .archive {
+  .rp-item {
+    &:nth-child(odd) {
+      .rp-cont {
+        @apply md:pl-6 lg:pl-8;
+      }
+      .rp-content {
+        @apply md:order-2;
+      }
+      .rp-image {
+        @apply md:order-1;
+      }
+    }
+    &:nth-child(even) {
+      .rp-cont {
+        @apply md:pr-6 lg:pr-8;
+      }
+      .rp-content {
+        @apply md:order-1;
+      }
+      .rp-image {
+        @apply md:order-2;
       }
     }
   }
 }
 
-@screen xl {
-  .blog, .archive {
-    .rp-container {
-      .rp-item{
-        .rp-content {
-          @apply order-2;
-        }
-        .rp-image {
-          @apply order-1;
-        }
-      }
-      .rp-item {
-        &:nth-child(4n), &:nth-child(4n+1) {
-          .rp-content {
-            @apply order-1;
-          }
-          .rp-image {
-            @apply order-2;
-          }
-        }
-        &:nth-child(4n+2), &:nth-child(4n+3) {
-          .rp-content {
-            @apply order-2;
-          }
-          .rp-image {
-            @apply order-1;
-          }
-        }
-      }
-    }
-  }
-}
+
+// @screen xl {
+//   .blog, .archive {
+//     .rp-container {
+//       .rp-item{
+//         .rp-content {
+//           @apply order-2;
+//         }
+//         .rp-image {
+//           @apply order-1;
+//         }
+//       }
+//       .rp-item {
+//         &:nth-child(4n), &:nth-child(4n+1) {
+//           .rp-content {
+//             @apply order-1;
+//           }
+//           .rp-image {
+//             @apply order-2;
+//           }
+//         }
+//         &:nth-child(4n+2), &:nth-child(4n+3) {
+//           .rp-content {
+//             @apply order-2;
+//           }
+//           .rp-image {
+//             @apply order-1;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 .blog-header {
   background: rgb(255,255,255);

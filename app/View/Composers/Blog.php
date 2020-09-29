@@ -49,15 +49,16 @@ class Blog extends Composer
         $args = array(
             'paged' => $paged,
             'post_type' => 'post',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'posts_per_page' => 4,
 
             // 'category_name' => $cat,
             //Here we can get more than one post type. Useful to a home page.
         );
 
-        $count = (get_option('sticky_posts')) ? 4 : 5;
-        $args['posts_per_page'] = $count;
-        $sticky = (get_option('sticky_posts')) ? get_option('sticky_posts') : false;
+        //$count = (get_option('sticky_posts')) ? 4 : 5;
+       //$args['posts_per_page'] = $count;
+        //$sticky = (get_option('sticky_posts')) ? get_option('sticky_posts') : false;
 
         $query = get_queried_object();
         if($query->term_id) {
@@ -74,15 +75,20 @@ class Blog extends Composer
         $post_data = [];
         while($posts->have_posts()): $posts->the_post();
         $id = get_the_ID();
-        $feat = (in_array($id, $sticky)) ? true : false;
+        //$feat = (in_array($id, $sticky)) ? true : false;
+        
+        $excerpt = get_the_excerpt();
+        $result = wp_trim_words( $excerpt, 32, '...');
+        // $excerpt = substr($excerpt, 0, 150);
+        // $result = substr($excerpt, 0, strrpos($excerpt, ' ')) . '...'; 
 
         $post_data['posts'][] = [
             'cat' => get_the_category(),
-            'feat' => $feat,
+            //'feat' => $feat,
             'title' => get_the_title(),
             'link' => get_permalink(),
             'image' => get_the_post_thumbnail_url(),
-            'excerpt' => get_the_excerpt(),
+            'excerpt' => $result,
         ];
         $post_data['page'] = $paged;
         $post_data['count'] = $count;

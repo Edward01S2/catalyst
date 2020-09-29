@@ -29,12 +29,15 @@ function load_more(){
   if( $wp_query->have_posts() ) {
     while( $wp_query->have_posts() ) : $wp_query->the_post();
     // echo 'worked';
+    $excerpt = get_the_excerpt();
+    $result = wp_trim_words( $excerpt, 32, '...');
+
     $post_data = [
       'cat' => get_the_category(),
       'title' => get_the_title(),
       'link' => get_permalink(),
       'image' => get_the_post_thumbnail_url(),
-      'excerpt' => get_the_excerpt(),
+      'excerpt' => $result,
     ];
     //$post_data['page'] = $paged;
     // echo template('partials.content-post');

@@ -185,4 +185,25 @@
   }
 }
 
+.service-grid {
+  .service-item {
+    &:nth-child(odd) {
+      .item-padding {
+        @apply md:pr-8 lg:pr-12;
+      }
+    }
+    &:nth-child(even) {
+      .item-padding {
+        @apply md:pl-8 lg:pl-12;
+      }
+      .service-image {
+        @apply order-1
+      }
+      .service-content {
+        @apply order-2;
+      }
+    }
+  }
+}
+
 /* purgecss end ignore */

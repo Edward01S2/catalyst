@@ -1,7 +1,7 @@
 <div class="{{ $block->classes }} bg-white" style="background-color: {!! $bg !!};">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 lg:pb-8">
     <div class="pt-8 pb-12 lg:pb-8">
-      <h3 class="text-3xl mb-4 md:text-4xl lg:mb-8">{!! $title !!}</h3>
+      <h2 class="text-4xl mb-4 lg:mb-8">{!! $title !!}</h2>
       <div class="flex flex-col space-y-6 lg:max-w-2xl lg:mx-auto xl:max-w-3xl">
         @foreach($items as $item)
           <div>
