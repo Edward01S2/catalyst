@@ -37,7 +37,6 @@ $(document).ready(() => {
   // });
 
   $('#gform_2 .gform_footer').appendTo('#gform_2 .gform_fields');
-
   $('#gform_3 .gform_footer').appendTo('#gform_3 .gform_fields');
 
   $('.flickity-page-dots').appendTo('.flickity-viewport');
