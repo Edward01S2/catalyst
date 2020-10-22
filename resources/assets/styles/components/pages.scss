@@ -115,4 +115,10 @@
   // }
 }
 
+.practice-areas {
+  .title-container {
+    @apply max-w-none lg:ml-0 lg:max-w-none xl:max-w-none pb-4;
+  }
+}
+
 /* purgecss end ignore */

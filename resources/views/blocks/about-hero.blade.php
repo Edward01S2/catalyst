@@ -1,11 +1,11 @@
 <div class="relative overflow-hidden" style="{!! $bg !!}">
-  <div class="relative container mx-auto px-4 z-30 sm:px-6 lg:px-8">
-      <div class="text-white pt-36 pb-12 relative z-30 lg:mx-auto lg:max-w-2xl xl:max-w-3xl">
+  <div class="container relative z-30 px-4 mx-auto sm:px-6 lg:px-8">
+      <div class="relative z-30 pb-12 text-white title-container pt-36 lg:mx-auto lg:max-w-2xl xl:max-w-3xl">
         @if($super)
-          <div class="text-sm mb-1 lg:text-base">{!! $super !!}</div>
+          <div class="mb-1 text-sm lg:text-base">{!! $super !!}</div>
         @endif
-        <h1 class="text-4xl leading-none mb-4 lg:text-5xl">{!! $title !!}</h1>
-        <p class="prose max-w-none text-white xl:prose-lg">{!! $content !!}</p>
+        <h1 class="mb-4 text-4xl leading-none lg:text-5xl">{!! $title !!}</h1>
+        <p class="prose text-white max-w-none xl:prose-lg">{!! $content !!}</p>
       </div>
 
   </div>
