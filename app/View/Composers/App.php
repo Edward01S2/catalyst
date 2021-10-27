@@ -26,6 +26,7 @@ class App extends Composer
             'siteName' => $this->siteName(),
             'head_scripts' => get_field('header_scripts', 'option'),
             'foot_scripts' => get_field('footer_scripts', 'option'),
+            'blog_bg' => get_field('Blog BG Image', 'options')['url'],
         ];
     }
 
